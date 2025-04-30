@@ -6,14 +6,14 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     color: #333;
   }
   
   header {
-    background-color: #333;
+    background-color: #232F3E; /* Cor de fundo similar à Amazon */
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
   }
   
@@ -21,24 +21,22 @@
     font-size: 2.5em;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-bottom: 10px;
   }
   
   header p {
     font-size: 1.2em;
-    color: #f4f4f4;
   }
   
   .produtos {
     padding: 40px 0;
-    text-align: center;
     background-color: #fff;
+    text-align: center;
   }
   
   .produtos h3 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 20px;
-    color: #333;
+    color: #232F3E;
   }
   
   .produto-card {
@@ -61,7 +59,7 @@
   
   .produto-card h4 {
     font-size: 1.6em;
-    color: #333;
+    color: #232F3E;
     margin-bottom: 10px;
   }
   
@@ -97,6 +95,67 @@
     .produto-card {
       width: 90%;
       margin: 10px 0;
+    }
+  }
+
+.contato {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+    text-align: left;
+  }
+  
+  .contato h3 {
+    font-size: 2.5em;
+    color: #ff7f00; /* Laranja para o título */
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .info {
+    font-size: 1.2em;
+  }
+  
+  .info strong {
+    color: #232F3E;
+    font-weight: bold;
+  }
+  
+  .info p {
+    color: #666;
+  }
+  
+  .info a {
+    color: #ff7f00;
+    text-decoration: none;
+  }
+  
+  .info a:hover {
+    text-decoration: underline;
+  }
+  
+  .nome {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #232F3E;
+    margin-right: 50px; /* Alinhamento mais à esquerda do nome */
+  }
+  
+  @media (max-width: 768px) {
+    .informacoes {
+      align-items: flex-start;
+    }
+  
+    .nome {
+      text-align: right;
+      margin-top: 30px;
     }
   }
   

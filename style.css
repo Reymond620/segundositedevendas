@@ -1,112 +1,86 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
+    background: #f2f2f2;
     color: #333;
   }
   
   header {
-    background-color: #232F3E; /* Cor de fundo similar à Amazon */
-    color: #fff;
-    padding: 20px 0;
+    background: #ff7f00;
+    color: white;
+    padding: 40px 0;
     text-align: center;
   }
   
   header h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-size: 2.8em;
+    margin: 0;
   }
   
   header p {
     font-size: 1.2em;
+    margin-top: 10px;
   }
   
-  .produtos {
-    padding: 40px 0;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .produtos h3 {
-    font-size: 2.2em;
-    margin-bottom: 20px;
-    color: #232F3E;
-  }
-  
-  .produto-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .container {
+    max-width: 1000px;
+    margin: auto;
     padding: 20px;
-    margin: 20px;
-    width: 250px;
-    display: inline-block;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
   }
   
-  .produto-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  .produtos h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 30px;
   }
   
-  .produto-card h4 {
-    font-size: 1.6em;
-    color: #232F3E;
-    margin-bottom: 10px;
+  .produto {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
   }
   
-  .produto-card p {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 15px;
+  .produto:hover {
+    transform: scale(1.02);
   }
   
-  .produto-card .preco {
-    font-size: 1.4em;
-    font-weight: bold;
+  .produto h4 {
+    margin: 0 0 10px;
     color: #ff7f00;
+  }
+  
+  .produto .preco {
+    font-size: 1.3em;
+    color: #333;
     margin-bottom: 15px;
   }
   
-  .produto-card button {
+  .produto a {
+    display: inline-block;
+    background: #ff7f00;
+    color: white;
     padding: 10px 20px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #ff7f00;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
   }
   
-  .produto-card button:hover {
-    background-color: #ff5500;
+  .produto a:hover {
+    background: #e66e00;
   }
   
-  @media (max-width: 768px) {
-    .produto-card {
-      width: 90%;
-      margin: 10px 0;
-    }
-  }
-
-.contato {
-    background-color: #f4f4f4;
+  .contato {
+    background-color: #eaeaea;
     padding: 60px 0;
-    text-align: left;
   }
   
   .contato h3 {
     font-size: 2.5em;
-    color: #ff7f00; /* Laranja para o título */
+    color: #ff7f00;
     margin-bottom: 30px;
     font-weight: bold;
   }
@@ -118,44 +92,34 @@
     margin-bottom: 30px;
   }
   
-  .info {
-    font-size: 1.2em;
-  }
-  
   .info strong {
     color: #232F3E;
-    font-weight: bold;
   }
   
   .info p {
-    color: #666;
+    color: #555;
+    margin: 5px 0;
   }
   
-  .info a {
-    color: #ff7f00;
-    text-decoration: none;
-  }
-  
-  .info a:hover {
-    text-decoration: underline;
+  .info a img {
+    vertical-align: middle;
   }
   
   .nome {
     text-align: right;
     margin-top: 20px;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #232F3E;
-    margin-right: 50px; /* Alinhamento mais à esquerda do nome */
+    margin-right: 40px;
   }
   
   @media (max-width: 768px) {
-    .informacoes {
-      align-items: flex-start;
+    .container {
+      padding: 10px;
     }
   
     .nome {
-      text-align: right;
-      margin-top: 30px;
+      margin-right: 20px;
     }
   }
   
